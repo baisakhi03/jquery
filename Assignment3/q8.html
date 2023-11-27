@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        $("#btn").click(function(){
+        $("#table").filter (function(){
+            $(this).toggle($(this).find("medical"))
+        });
+    });
+});
+    </script>
+</head>
+<body>
+    <h2>Jobs listing</h2>
+  <label for="job listing"></label>
+  <select name="" id="select">
+    <option value="Medical">Medical</option>
+    <option value="Engineer">Engineer</option>
+  </select>
+  <button id="btn">Submit</button>
+    <table id="table">
+        <tr>
+            <th>Jobs</th>
+            <th>Position</th>
+        </tr>
+        <tr>
+            <td>Medical</td>
+            <td>management</td>
+        </tr>
+        <tr>
+            <td>Medical</td>
+            <td>doctor</td>
+        </tr>
+        <tr>
+            <td>Medical</td>
+            <td>Nurse</td>
+        </tr>
+        <tr>
+          <td>Engineer</td>
+          <td>Software</td>
+        </tr>
+    </table>
+  
+</body>
+</html>

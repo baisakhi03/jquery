@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+    <script>
+        $(document).ready(function(){
+            $("#an").click(function(){
+             $("#ani").slideDown("fast");
+            });
+             $(".a").click(function(){
+             $("#an").animate({left:'500px',height:'200px',width:'200px',opacity:'0.2'})
+             });
+               $(".b").click(function(){
+                $("p").fadeIn(1000);
+               });
+               $(".c").click(function(){
+                $("p").hide();
+               });
+               $(".d").click(function(){
+                $("p").show();
+               });
+               $(".e").mouseleave(function(){
+                alert("left");
+               });
+               $(".g").mouseenter(function(){
+                alert("enter");
+               });
+               $(".f").dblclick(function(){
+                $("p").hide();
+               });
+            });
+            
+    </script>
+    <style>
+        #an{
+            border: 2px solid sandybrown;
+            background-color: bisque;
+        }
+        #ani{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="an"  style="height: 50px;width:50px;background-color:aqua"></div>
+    <div id="ani"  style="height: 50px;width:50px;background-color:rgb(70, 102, 102)"></div>
+    
+    <p>Hello,Its me</p>
+    <button class="1">Slide down</button>
+    <button class="a">Animate</button>
+    <button class="b">Fade</button>
+    <button class="c">Hide</button>
+    <button class="d">Show</button>
+    <button class="e">Mouseenter</button>
+    <button class="f">Dblclick</button>
+    <button class="g">Mouseleave</button>
+
+</body>
+</html>
